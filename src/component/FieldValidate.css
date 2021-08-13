@@ -1,0 +1,11 @@
+.field-validate {
+    @apply block text-xs mt-2;
+}
+
+.field-validate.field-validate--error {
+    @apply text-red-400;
+}
+
+.field-validate.field-validate--warn {
+    @apply text-orange-300;
+}

@@ -1,0 +1,7 @@
+.person-ilustration-wrapper {
+    @apply flex;
+}
+
+.person-ilustration-wrapper svg {
+    @apply w-auto md:h-240px <md:h-200px;
+}

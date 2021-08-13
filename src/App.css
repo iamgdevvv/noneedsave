@@ -1,0 +1,19 @@
+.page-homepage {
+    @apply flex items-center justify-center min-h-100vh pt-16 md:pb-20 <md:pb-30 px-1rem bg-gray-100;
+}
+
+.tab-content-wrapper {
+    @apply relative w-600px max-w-full md:pt-120px <md:pt-150px;
+}
+
+.tab-content-wrapper .tab-wrapper {
+    @apply md:(relative z-1 top-2px -left-60px w-auto pl-60px) <md:(fixed bottom-0 left-0 z-10 w-full);
+}
+
+.tab-content-wrapper .tab-wrapper .tab-item {
+    @apply <md:w-1/2;
+}
+
+.tab-content-wrapper .person-ilustration-wrapper {
+    @apply absolute top-0 right-40px z-3;
+}

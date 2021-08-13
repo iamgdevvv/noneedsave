@@ -1,0 +1,64 @@
+.form-message + .form-message {
+	@apply mt-10 pt-10 border-t border-dashed border-gray-300;
+}
+
+.input-field {
+	@apply w-full mb-6;
+}
+
+.input-wrapper {
+	@apply relative w-full flex items-stretch;
+}
+
+.input-field--phone .select-phonecode {
+	@apply appearance-none absolute top-0 left-0 h-full w-18 text-sm px-3 rounded-none border-t-0 border-l-0 border-b-0 border-r-1;
+	background: rgba(0, 0, 0, 0) url(/assets/icons/icon-down-arrow.svg) calc(100% - 8px) center/12px no-repeat;
+}
+
+.input-field--phone .tel-field {
+	@apply pl-20;
+}
+
+.input-field--phone .input-wrapper:hover *,
+.input-field--phone .input-wrapper:focus *,
+.input-field--phone .tel-field:hover~.select-phonecode,
+.input-field--phone .tel-field:focus~.select-phonecode {
+	@apply border-true-gray-800;
+}
+
+.tel-field::-webkit-outer-spin-button,
+.tel-field::-webkit-inner-spin-button {
+	@apply appearance-none m-0;
+}
+
+.action-field {
+	@apply flex items-center flex-row flex-wrap w-full md:mt-4;
+}
+
+.form-message-telegram--username .action-field {
+	@apply mt-0;
+}
+
+.action-field .cta-submit {
+	@apply block ml-auto <md:w-full;
+}
+
+.form-message-telegram--username .action-field .cta-submit {
+	@apply mr-auto;
+}
+
+.toolbar-fields {
+	@apply flex items-center w-full mb-6 md:(w-auto mb-0);
+}
+
+.toolbar-fields .toolbar-action {
+	@apply not-last:(mr-2);
+}
+
+.toolbar-action {
+    @apply w-40px h-40px p-0 flex items-center justify-center bg-gray-300 hover:(bg-cyan-400);
+}
+
+.toolbar-action svg {
+    @apply w-5;
+}

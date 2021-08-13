@@ -1,0 +1,15 @@
+/* TEAM */                  
+Your title: Noneedsave
+Site: https://noneedsave.web.app/
+Location: Pekanbaru, Indonesia
+
+							
+/* THANKS */							
+Name: Grafis Nuresa / iamgdev
+					
+                            
+/* SITE */
+Last update: 2021/04/19
+Standards: HTML5, CSS3, JS.
+Components: React, React Router, WindiCSS, etc.
+Software: Software used for the development

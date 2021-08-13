@@ -1,0 +1,100 @@
+@layer base {
+	@font-face {
+    font-family: 'EncodeSans';
+    font-style: normal;
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-display: block;
+    src: url(/assets/fonts/EncodeSans.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'EncodeSans';
+    font-style: normal;
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-display: block;
+    src: url(/assets/fonts/EncodeSans-latinext.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'EncodeSans';
+    font-style: normal;
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-display: block;
+    src: url(/assets/fonts/EncodeSans-latin.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+	body {
+    font-family: 'EncodeSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    @apply text-base antialiased m-0 p-0 text-dark-200;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+}
+
+h1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+h2 {
+  @apply text-3xl font-bold mb-4;
+}
+
+h3 {
+  @apply text-2xl font-bold mb-4;
+}
+
+h4 {
+  @apply text-xl font-bold mb-2;
+}
+
+h5 {
+  @apply text-lg font-bold mb-2;
+}
+
+h6 {
+  @apply text-base font-bold mb-2;
+}
+
+*+p,
+p+* {
+  @apply mt-4;
+}
+
+svg {
+  @apply w-full h-auto;
+}
+
+form {
+  @apply flex flex-col flex-wrap items-start justify-start;
+}
+
+label {
+  @apply block text-sm mb-2;
+}
+
+input,
+select,
+textarea {
+  @apply w-full text-base border-2 border-true-gray-400 hover:(border-true-gray-800) focus:(border-true-gray-800) px-4 pt-3 pb-4 rounded-md bg-white resize-none cursor-pointer transition duration-300;
+  font-family: 'EncodeSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  outline: none;
+}
+
+textarea {
+  @apply min-h-30;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  @apply text-sm font-medium px-6 py-4 rounded-md text-white tracking-wider uppercase bg-cyan-300 hover:(bg-cyan-400) transition duration-300;
+}

@@ -1,0 +1,7 @@
+.site-article {
+    @apply mt-10;
+}
+
+.site-article .figure-image {
+    @apply w-100px mb-4;
+}

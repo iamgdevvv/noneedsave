@@ -1,0 +1,27 @@
+.tab-wrapper {
+	@apply flex items-stretch overflow-hidden before:(content-[''] absolute top-0 left-0 -z-1 w-88px h-full rounded-tl-md bg-cyan-300 rounded-bl-md rotate-40 -translate-x-6px -translate-y-18px transform-gpu <sm:hidden);
+}
+
+.tab-wrapper .tab-item {
+	@apply flex items-center justify-center px-6 py-4 border-2 no-underline text-cyan-300 border-cyan-300 bg-white cursor-pointer;
+}
+
+.tab-wrapper li:not(:first-child) .tab-item {
+	@apply border-l-0;
+}
+
+.tab-wrapper li:last-of-type .tab-item {
+	@apply rounded-tr-lg;
+}
+
+.tab-wrapper .tab-item.tab-item--active {
+	@apply bg-cyan-300 text-white;
+}
+
+.tab-wrapper .figure-image {
+	@apply w-24px h-24px mr-10px;
+}
+
+.tab-wrapper .tab-label {
+	@apply font-medium;
+}

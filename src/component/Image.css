@@ -1,0 +1,11 @@
+.figure-image {
+	@apply relative;
+}
+
+.figure-image .image-wrapper {
+	@apply block w-full;
+}
+
+.figure-image img {
+	@apply w-full h-full object-center object-contain;
+}
